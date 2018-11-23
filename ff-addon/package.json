@@ -1,0 +1,72 @@
+{
+    "author": "Michael Kreikenbaum",
+    "description": "Defends against website fingerprinting by injecting artificial cover traffic into the communication.",
+    "engines": {
+	"firefox": "38.0a1 *",
+	"fennec": "38.0a1 *" },
+    "jshintConfig": {
+	"esversion": 6,
+	"module": true,
+	"moz": true,
+	"predef": ["require", "exports", "console"],
+	"strict": "global",
+	"typed": true
+    },
+    "license": "MIT",
+    "main": "index.js",
+    "name": "wf-cover",
+    "permissions": {"private-browsing": true},
+    "preferences": [ {
+	"name": "factor",
+	"title": "Dummy Traffic Overhead",
+	"description": "traffic overhead in extra percent: 50 leads to 50% extra traffic: for each two requested objects, there would be one extra request on average",
+	"type": "integer",
+	"value": 50
+    }, {
+	"name": "Traffic-HOST",
+	"title": "Cover Traffic Server IP/Hostname",
+	"description": "Use this IP address for cover traffic",
+	"type": "string",
+	"value": "134.169.109.25"
+    }, {
+	"name": "Traffic-PORT",
+	"title": "Cover Traffic Server Port",
+	"description": "Query this port for cover traffic",
+	"type": "integer",
+	"value": 7777
+    }, {
+	"name": "sizes",
+	"title": "Known Page Sizes (A/B)",
+	"description": "Use known size values (A) for a page (HTML size and number of embedded objects). If false, only guess sizes (B).",
+	"type": "bool",
+	"value": true
+    }, {
+	"name": "bins",
+	"title": "Max-Bin-Strategy (I/II)",
+	"description": "Use max-of-bin strategy (I). If false, use one target distribution (II).",
+	"type": "bool",
+	"value": true
+    }, {
+	"name": "burst",
+	"title": "Add bursts at the end",
+	"description": "If true, add request for each unsent embedded element at the end.",
+	"type": "bool",
+	"value": false
+    }, {
+	"name": "min_size",
+        "title" : "Minimal size of cover traffic server response",
+	"description": "due to size of headers etc. Smaller is disregarded",
+	"type": "integer",
+	"value": 160,
+        "hidden": true
+    }, {
+	"name": "redirect_p",
+	"title": "Probability in % to skip traffic",
+        "description": "when there were redirects previously",
+	"type": "integer",
+	"value": 70,
+        "hidden": true
+    }],
+    "title": "Tor Selective Cover Traffic",
+    "version": "0.22.1", "SHOULD SEE": "da.org about tests on version-bump"
+}

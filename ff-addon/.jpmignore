@@ -1,0 +1,12 @@
+.git
+.gitignore
+doc/
+unused/
+.jpmignore
+*~
+*xpi
+Makefile
+package.json.backup
+underscore.js
+oldxpi/
+test
