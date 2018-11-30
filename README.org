@@ -1,1 +1,27 @@
-* website-fingerprinting-thesis
+* Defending against Tor Website Fingerprinting with Selective Cover Traffic
+** Why
+The anonymity network Tor is under attack. It provides access to an
+uncensored internet for people in oppressive regimes, and enables for
+example whistleblowers to report wrongdoing with no fear of
+retribution. If its anonymity were to be reduced, this would hamper
+its purpose, both in actual terms, and because this would dissuade
+users, as the number of users increase its anonymity.
+
+
+Website fingerprinting can allow a local passive adversary, a very
+limited attacker, to fathom which websites a user is visiting,
+reducing Tor’s anonymity. This has continued to improve as AI
+continues to improve, and researchers publish new website
+fingerprinting attacks against Tor.
+
+
+This repository presents a new defense against website fingerprinting. The
+defense creates camouflage traffic tailored to WWW distributions to
+hide which page the user visits. It is easily configurable for the
+level of required anonymity, and does not burden the user overly,
+neither in installation, nor in the time and size delay it imposes.
+** Where
+If you want all the details and history, the complete thesis repo is at https://github.com/kreikenbaum/wfcomplete. The data files are at ... (8GB). After downloading, do a =zpaq extract data.zpaq=. [[https://github.com/zpaq/zpaq][Zpaq]] keeps the file size down so that it fits on the free Google Drive quota (thank you @Google for hosting this :-)).
+
+
+If you are only interested in capturing website fingerprinting data, have a look at https://github.com/kreikenbaum/capture. The [[https://github.com/kreikenbaum/capture][INSTALL.org]] file has all the details.
