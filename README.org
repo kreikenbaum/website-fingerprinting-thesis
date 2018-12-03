@@ -25,3 +25,5 @@ If you want all the details and history, the complete thesis repo is at https://
 
 
 If you are only interested in capturing website fingerprinting data, have a look at https://github.com/kreikenbaum/capture. The [[https://github.com/kreikenbaum/capture][INSTALL.org]] file has all the details.
+** Wat
+Any feedback, questions, corrections, etc, feel welcome! You can use [[https://github.com/kreikenbau/website-fingerprinting-thesis/issues/][the issue system]].
