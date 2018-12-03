@@ -21,7 +21,7 @@ hide which page the user visits. It is easily configurable for the
 level of required anonymity, and does not burden the user overly,
 neither in installation, nor in the time and size delay it imposes.
 ** Where
-If you want all the details and history, the complete thesis repo is at https://github.com/kreikenbaum/wfcomplete. The data files are at ... (8GB). After downloading, do a =zpaq extract data.zpaq=. [[https://github.com/zpaq/zpaq][Zpaq]] keeps the file size down so that it fits on the free Google Drive quota (thank you @Google for hosting this :-)).
+If you want all the details and history, the complete thesis repo is at https://github.com/kreikenbaum/wfcomplete. The data files are at https://drive.google.com/open?id=13qM-OuX4RZMhsFbjKKW5ZfoXJIYGSkrI (8GB zipped, more than 20GB unzipped). After downloading, do a =zpaq extract data.zpaq=. [[https://github.com/zpaq/zpaq][Zpaq]] keeps the file size down so that it fits on the free Google Drive quota (thank you @Google for hosting this :-)).
 
 
 If you are only interested in capturing website fingerprinting data, have a look at https://github.com/kreikenbaum/capture. The [[https://github.com/kreikenbaum/capture][INSTALL.org]] file has all the details.
